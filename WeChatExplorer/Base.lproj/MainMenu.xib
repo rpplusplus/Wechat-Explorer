@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="494" id="495"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="微信备份工具" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" id="372" customClass="ETMainView">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" allowsEmptySelection="YES" defaultColumnWidth="100" minColumnWidth="100" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" translatesAutoresizingMaskIntoConstraints="NO" id="q2v-xu-TvC">
+                        <rect key="frame" x="20" y="68" width="440" height="294"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="372" id="8y6-wW-iCf"/>
+                        </connections>
+                    </browser>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Qr-Iaq">
+                        <rect key="frame" x="14" y="7" width="94" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="播放" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="25L-VI-3Ii">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="playBtnClick:" target="372" id="CgO-RK-eUq"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PL1-8U-zd1">
+                        <rect key="frame" x="20" y="43" width="48" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="已选择:" id="DLk-wg-5Sj">
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-Bq-6xu">
+                        <rect key="frame" x="108" y="7" width="94" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="另存为" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Fa-nc-7al">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" size="13" name="STHeitiSC-Light"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveBtnClick:" target="372" id="bD6-qr-Ajk"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-VM-14j">
+                        <rect key="frame" x="74" y="43" width="124" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Tgt-vj-NCI">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q2v-xu-TvC" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="5JG-fl-dPA"/>
+                    <constraint firstItem="JaI-Bq-6xu" firstAttribute="leading" secondItem="2je-Qr-Iaq" secondAttribute="trailing" constant="12" id="8jO-6R-PNl"/>
+                    <constraint firstAttribute="bottom" secondItem="q2v-xu-TvC" secondAttribute="bottom" constant="68" id="Dqe-8P-08S"/>
+                    <constraint firstItem="q2v-xu-TvC" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" id="Llg-NW-YZ1"/>
+                    <constraint firstAttribute="bottom" secondItem="JaI-Bq-6xu" secondAttribute="bottom" constant="14" id="dG2-kE-l9M"/>
+                    <constraint firstAttribute="bottom" secondItem="2je-Qr-Iaq" secondAttribute="bottom" constant="14" id="guY-nX-Urf"/>
+                    <constraint firstItem="PL1-8U-zd1" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="22" id="kSP-m2-dm6"/>
+                    <constraint firstAttribute="trailing" secondItem="q2v-xu-TvC" secondAttribute="trailing" constant="20" id="nki-Ua-ADD"/>
+                    <constraint firstItem="2je-Qr-Iaq" firstAttribute="top" secondItem="PL1-8U-zd1" secondAttribute="bottom" constant="8" id="siM-mI-TEZ"/>
+                </constraints>
+                <connections>
+                    <outlet property="browser" destination="q2v-xu-TvC" id="Rbv-LU-jye"/>
+                    <outlet property="selectLabel" destination="MJt-VM-14j" id="oNW-YM-fzC"/>
+                </connections>
+            </view>
+        </window>
+        <customObject id="494" customClass="ETAppDelegate">
+            <connections>
+                <outlet property="window" destination="371" id="532"/>
+            </connections>
+        </customObject>
+        <customObject id="420" customClass="NSFontManager"/>
+    </objects>
+</document>
