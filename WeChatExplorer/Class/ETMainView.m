@@ -56,6 +56,8 @@
         {
             NSString* path = [panel.URL.absoluteString substringFromIndex:7];
             
+            //NSLog(@"%@", path);
+            
             if ([wechat moveUser:userName.displayName
                   folderName:folder.displayName
                      audFile:self.selectNode.displayName
@@ -69,6 +71,42 @@
                 NSLog(@"Save Failed!");
             }
         }
+    }
+    
+    if (self.selectFolder) {
+        //ETWechatHandler* wechat = self.selectFolder.wechat;
+        ETBrowserNode* userName = self.selectFolder.fatherNode;
+        NSMutableArray* childrenNode = self.selectFolder.childrenNode;
+        
+        NSOpenPanel* panel = [NSOpenPanel openPanel];
+        [panel setCanChooseDirectories:YES];
+        long t = [panel runModal];
+        NSLog(@"%@", [panel.URL.absoluteString substringFromIndex:7]);
+        if (t)
+        {
+            for (int i=0; i<childrenNode.count; ++i) {
+                
+                ETBrowserNode* audioNode = [childrenNode objectAtIndex:i];
+                
+                NSString* path = [NSString stringWithFormat:@"%@%@", [panel.URL.absoluteString substringFromIndex:7], [audioNode.displayName stringByReplacingOccurrencesOfString:@"aud" withString:@"amr"]];
+                
+                //NSLog(@"%@", path);
+                
+                if ([audioNode.wechat moveUser:userName.displayName
+                          folderName:self.selectFolder.displayName
+                             audFile:audioNode.displayName
+                              toPath:path
+                          convertAMR:YES])
+                {
+                    NSLog(@"Saved!");
+                }
+                else
+                {
+                    NSLog(@"Save Failed!");
+                }
+            }
+        }
+
     }
 }
 
@@ -187,6 +225,13 @@
         {
             self.selectLabel.stringValue = node.displayName;
             self.selectNode = node;
+            self.selectFolder = nil;
+        }
+        
+        if (node.type==kTargetUserName) {
+            self.selectLabel.stringValue = node.displayName;
+            self.selectFolder = node;
+            self.selectNode = nil;
         }
     }
 }

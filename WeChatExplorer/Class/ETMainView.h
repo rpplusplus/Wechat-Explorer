@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong)   NSMutableArray*     dataSource;
 @property (nonatomic, weak)     ETBrowserNode*      selectNode;
+@property (nonatomic, weak)     ETBrowserNode*      selectFolder;
 @property (nonatomic, strong)   AVAudioPlayer*      player;
 
 - (IBAction) playBtnClick:(id)sender;
