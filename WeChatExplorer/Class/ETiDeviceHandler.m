@@ -52,7 +52,7 @@ static ETiDeviceHandler*    _handler = nil;
 
 - (void)deviceConnected:(AMDevice*)device
 {
-    NSLog(@"设备已连接");
+    NSLog(@"Device Connected!");
     NSLog(@"%@", device);
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"deviceListChanged"
@@ -63,7 +63,7 @@ static ETiDeviceHandler*    _handler = nil;
 /// This method will be called whenever a device is disconnected
 - (void)deviceDisconnected:(AMDevice*)device
 {
-    NSLog(@"设备已断开");
+    NSLog(@"Device Disconnected!");
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"deviceListChanged"
                                                         object:nil

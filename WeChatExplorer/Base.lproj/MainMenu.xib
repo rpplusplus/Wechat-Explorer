@@ -27,9 +27,12 @@
                             <outlet property="delegate" destination="372" id="8y6-wW-iCf"/>
                         </connections>
                     </browser>
-                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Qr-Iaq">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2je-Qr-Iaq">
                         <rect key="frame" x="14" y="7" width="94" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="Gsj-uj-JpG"/>
+                        </constraints>
                         <buttonCell key="cell" type="push" title="Play" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="25L-VI-3Ii">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" size="13" name="STHeitiSC-Light"/>
@@ -47,7 +50,7 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-Bq-6xu">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JaI-Bq-6xu">
                         <rect key="frame" x="108" y="7" width="94" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Save As" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1Fa-nc-7al">
@@ -58,9 +61,12 @@
                             <action selector="saveBtnClick:" target="372" id="bD6-qr-Ajk"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-VM-14j">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MJt-VM-14j">
                         <rect key="frame" x="83" y="43" width="124" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="tUo-dI-shk"/>
+                        </constraints>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="Tgt-vj-NCI">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -70,14 +76,20 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="q2v-xu-TvC" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="5JG-fl-dPA"/>
-                    <constraint firstItem="JaI-Bq-6xu" firstAttribute="leading" secondItem="2je-Qr-Iaq" secondAttribute="trailing" constant="12" id="8jO-6R-PNl"/>
                     <constraint firstAttribute="bottom" secondItem="q2v-xu-TvC" secondAttribute="bottom" constant="68" id="Dqe-8P-08S"/>
+                    <constraint firstItem="2je-Qr-Iaq" firstAttribute="height" secondItem="JaI-Bq-6xu" secondAttribute="height" id="FCG-5f-U8K"/>
                     <constraint firstItem="q2v-xu-TvC" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" id="Llg-NW-YZ1"/>
-                    <constraint firstAttribute="bottom" secondItem="JaI-Bq-6xu" secondAttribute="bottom" constant="14" id="dG2-kE-l9M"/>
-                    <constraint firstAttribute="bottom" secondItem="2je-Qr-Iaq" secondAttribute="bottom" constant="14" id="guY-nX-Urf"/>
+                    <constraint firstItem="JaI-Bq-6xu" firstAttribute="leading" secondItem="2je-Qr-Iaq" secondAttribute="trailing" constant="12" id="MPv-af-Cv0"/>
+                    <constraint firstItem="JaI-Bq-6xu" firstAttribute="bottom" secondItem="2je-Qr-Iaq" secondAttribute="bottom" id="QTZ-hQ-qfb"/>
+                    <constraint firstItem="PL1-8U-zd1" firstAttribute="height" secondItem="MJt-VM-14j" secondAttribute="height" id="ayG-nm-R6S"/>
+                    <constraint firstAttribute="bottom" secondItem="2je-Qr-Iaq" secondAttribute="bottom" constant="14" id="eMG-IC-ejP"/>
+                    <constraint firstItem="PL1-8U-zd1" firstAttribute="bottom" secondItem="MJt-VM-14j" secondAttribute="bottom" id="hFk-bH-idL"/>
                     <constraint firstItem="PL1-8U-zd1" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="22" id="kSP-m2-dm6"/>
                     <constraint firstAttribute="trailing" secondItem="q2v-xu-TvC" secondAttribute="trailing" constant="20" id="nki-Ua-ADD"/>
+                    <constraint firstItem="MJt-VM-14j" firstAttribute="leading" secondItem="PL1-8U-zd1" secondAttribute="trailing" constant="3" id="peB-Rl-ePP"/>
                     <constraint firstItem="2je-Qr-Iaq" firstAttribute="top" secondItem="PL1-8U-zd1" secondAttribute="bottom" constant="8" id="siM-mI-TEZ"/>
+                    <constraint firstItem="2je-Qr-Iaq" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="tiT-nN-Vwc"/>
+                    <constraint firstItem="2je-Qr-Iaq" firstAttribute="width" secondItem="JaI-Bq-6xu" secondAttribute="width" id="uNF-lq-gMr"/>
                 </constraints>
                 <connections>
                     <outlet property="browser" destination="q2v-xu-TvC" id="Rbv-LU-jye"/>

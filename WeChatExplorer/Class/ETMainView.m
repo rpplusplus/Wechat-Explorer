@@ -62,11 +62,11 @@
                       toPath:path
                   convertAMR:YES])
             {
-                NSLog(@"保存成功");
+                NSLog(@"Saved!");
             }
             else
             {
-                NSLog(@"保存失败");
+                NSLog(@"Save Failed!");
             }
         }
     }
