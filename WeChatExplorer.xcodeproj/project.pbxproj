@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96B2387718AEDF79009D242B /* libMobileDeviceAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B2387618AEDF79009D242B /* libMobileDeviceAccess.a */; };
 		AD17367718775404009FBF01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD17367618775404009FBF01 /* Cocoa.framework */; };
 		AD17368118775404009FBF01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD17367F18775404009FBF01 /* InfoPlist.strings */; };
 		AD17368318775404009FBF01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD17368218775404009FBF01 /* main.m */; };
@@ -18,7 +19,6 @@
 		AD17369718775404009FBF01 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD17367618775404009FBF01 /* Cocoa.framework */; };
 		AD17369F18775404009FBF01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD17369D18775404009FBF01 /* InfoPlist.strings */; };
 		AD1736A118775404009FBF01 /* WeChatExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1736A018775404009FBF01 /* WeChatExplorerTests.m */; };
-		AD1736AC18775432009FBF01 /* libMobileDeviceAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1736AB18775432009FBF01 /* libMobileDeviceAccess.a */; };
 		AD1736AE187756B8009FBF01 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1736AD187756B8009FBF01 /* MobileDevice.framework */; };
 		AD1736B11877588C009FBF01 /* ETiDeviceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1736B01877588C009FBF01 /* ETiDeviceHandler.m */; };
 		AD519A3F187819AD00FA4E8C /* ETWechatHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AD519A3E187819AD00FA4E8C /* ETWechatHandler.m */; };
@@ -38,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96B2387618AEDF79009D242B /* libMobileDeviceAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobileDeviceAccess.a; path = lib/libMobileDeviceAccess.a; sourceTree = "<group>"; };
+		96B2387818AEDF92009D242B /* MobileDeviceAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileDeviceAccess.h; path = include/MobileDeviceAccess.h; sourceTree = "<group>"; };
+		96B2387918AEDFDC009D242B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		96B2387A18AEDFDC009D242B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		96B2387B18AEDFDC009D242B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "zh-Hans"; path = "zh-Hans.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		96B2387C18AEDFDD009D242B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AD17367318775404009FBF01 /* WeChatExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD17367618775404009FBF01 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AD17367918775404009FBF01 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,8 +63,6 @@
 		AD17369C18775404009FBF01 /* WeChatExplorerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WeChatExplorerTests-Info.plist"; sourceTree = "<group>"; };
 		AD17369E18775404009FBF01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AD1736A018775404009FBF01 /* WeChatExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatExplorerTests.m; sourceTree = "<group>"; };
-		AD1736AA1877542D009FBF01 /* MobileDeviceAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileDeviceAccess.h; sourceTree = "<group>"; };
-		AD1736AB18775432009FBF01 /* libMobileDeviceAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobileDeviceAccess.a; sourceTree = "<group>"; };
 		AD1736AD187756B8009FBF01 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = ../../../../../System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<group>"; };
 		AD1736AF1877588C009FBF01 /* ETiDeviceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ETiDeviceHandler.h; path = Class/ETiDeviceHandler.h; sourceTree = "<group>"; };
 		AD1736B01877588C009FBF01 /* ETiDeviceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ETiDeviceHandler.m; path = Class/ETiDeviceHandler.m; sourceTree = "<group>"; };
@@ -76,10 +80,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B2387718AEDF79009D242B /* libMobileDeviceAccess.a in Frameworks */,
 				AD6420FD1879BF3700B14D42 /* AVFoundation.framework in Frameworks */,
 				AD1736AE187756B8009FBF01 /* MobileDevice.framework in Frameworks */,
 				AD17367718775404009FBF01 /* Cocoa.framework in Frameworks */,
-				AD1736AC18775432009FBF01 /* libMobileDeviceAccess.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,10 +121,10 @@
 		AD17367518775404009FBF01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96B2387618AEDF79009D242B /* libMobileDeviceAccess.a */,
 				AD6420FC1879BF3700B14D42 /* AVFoundation.framework */,
 				AD1736AD187756B8009FBF01 /* MobileDevice.framework */,
-				AD1736AA1877542D009FBF01 /* MobileDeviceAccess.h */,
-				AD1736AB18775432009FBF01 /* libMobileDeviceAccess.a */,
+				96B2387818AEDF92009D242B /* MobileDeviceAccess.h */,
 				AD17367618775404009FBF01 /* Cocoa.framework */,
 				AD17369518775404009FBF01 /* XCTest.framework */,
 				AD17367818775404009FBF01 /* Other Frameworks */,
@@ -248,6 +252,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = AD17366A18775404009FBF01;
 			productRefGroup = AD17367418775404009FBF01 /* Products */;
@@ -319,6 +324,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD17368018775404009FBF01 /* en */,
+				96B2387A18AEDFDC009D242B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD17368618775404009FBF01 /* en */,
+				96B2387B18AEDFDC009D242B /* zh-Hans */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -335,6 +342,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD17368C18775404009FBF01 /* Base */,
+				96B2387918AEDFDC009D242B /* zh-Hans */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AD17369E18775404009FBF01 /* en */,
+				96B2387C18AEDFDD009D242B /* zh-Hans */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -429,10 +438,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeChatExplorer/WeChatExplorer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 				INFOPLIST_FILE = "WeChatExplorer/WeChatExplorer-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/txx/Desktop/workspace/WeChatExplorer,
+					lib,
+					/Users/Jason/Projects/WeChatExplorer/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -450,10 +465,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WeChatExplorer/WeChatExplorer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					include,
+				);
 				INFOPLIST_FILE = "WeChatExplorer/WeChatExplorer-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/txx/Desktop/workspace/WeChatExplorer,
+					lib,
+					/Users/Jason/Projects/WeChatExplorer/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

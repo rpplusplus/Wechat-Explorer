@@ -1,0 +1,12 @@
+
+/* Class = "NSWindow"; title = "WeChat Audio Tool"; ObjectID = "371"; */
+"371.title" = "微信音频导出工具";
+
+/* Class = "NSButtonCell"; title = "Save As"; ObjectID = "1Fa-nc-7al"; */
+"1Fa-nc-7al.title" = "保存";
+
+/* Class = "NSButtonCell"; title = "Play"; ObjectID = "25L-VI-3Ii"; */
+"25L-VI-3Ii.title" = "播放";
+
+/* Class = "NSTextFieldCell"; title = "Selected:"; ObjectID = "DLk-wg-5Sj"; */
+"DLk-wg-5Sj.title" = "已选择:";
